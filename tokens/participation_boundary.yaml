@@ -1,0 +1,10 @@
+token_id: Σ-FDL::Δ-Participation-Boundary::2025-09::v1
+issuer: NOVEYA / NGOI-SIGMA (AZ)
+status: Active
+purpose: "Условия оплаты, авторства и цитирования при интеграции FDL‑модулей"
+terms:
+  free_tier: "анонсы, демо ≤ 2 задач"
+  paid_tier: "пилот 3 мес, интеграция, кастомизация"
+  citation_mandatory: true
+  ip_rights: "Core methodology retained by NOVEYA; outputs negotiable"
+  enforcement: "contract + public registry"
