@@ -1,0 +1,26 @@
+token_id: Σ-FDL::Δ-Resource-Normativity::2025-09::v1
+issuer: NOVEYA / NGOI-SIGMA (AZ)
+status: Draft
+purpose: "Увязка GVC с нормированием расхода ресурсов и управляемой избыточностью"
+schema:
+  resource:
+    type: [energy, fuel, raw_material, labor, capex]
+  formulas:
+    safe_stock: "max(alpha * daily_consumption, beta * lead_time_variability)"
+    reorder_point: "avg_demand * lead_time + z * demand_std * sqrt(lead_time)"
+    energy_norm: "k1 * throughput + k2 * idle_time + k3 * temp_delta"
+  parameters:
+    alpha: 0.6
+    beta: 1.2
+    z: 1.65
+  triggers:
+    - id: T1
+      if: "consumption > norm * 1.10"
+      action: ["throttle_supply", "optimize_schedule"]
+    - id: T2
+      if: "lead_time_var > threshold"
+      action: ["reallocate_local", "multi_source"]
+  audit:
+    interval: "7d"
+    owner: "NOVEYA-Resource-Unit"
+    signature: "Σ-FDL-SIGN(v1)"
