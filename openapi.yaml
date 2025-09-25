@@ -1,0 +1,49 @@
+openapi: 3.0.0
+info:
+  title: FDL Resource Norm API
+  version: 1.0.0
+paths:
+  /regulate:
+    post:
+      summary: Регуляция нормы ресурса
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NormRequest'
+      responses:
+        '200':
+          description: Ок
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+  /norms/{resource}/current:
+    get:
+      summary: Текущая норма для ресурса
+      parameters:
+        - name: resource
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Ок
+components:
+  schemas:
+    NormRequest:
+      type: object
+      properties:
+        type:
+          type: string
+        current:
+          type: number
+        expected:
+          type: number
+        context:
+          type: string

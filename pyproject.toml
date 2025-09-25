@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "noveya-fdl-resource-norm"
+version = "0.1.0"
+description = "Σ‑FDL Resource Normativity — norm engine and tokens"
+authors = [
+  {name="NGOI‑SIGMA (AZ) / NOVEYA", email="contact@example.org"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["fdl", "norms", "gvc", "ai", "resource"]
+classifiers = ["Programming Language :: Python :: 3"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/"

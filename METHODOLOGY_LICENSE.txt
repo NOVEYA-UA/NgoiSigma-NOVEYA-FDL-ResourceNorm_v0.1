@@ -1,0 +1,6 @@
+Core FDL Methodology Rights — NOVEYA / NGOI‑SIGMA (AZ)
+
+This repository contains both software code and methodological descriptions.
+While the code is released under the MIT License, the underlying FDL methodology,
+lexicon and meta-architecture remain the intellectual property of NOVEYA.
+Commercial use of the methodology beyond this code requires a separate agreement.
