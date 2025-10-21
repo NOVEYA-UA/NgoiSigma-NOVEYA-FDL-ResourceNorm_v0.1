@@ -67,7 +67,17 @@ POST /actions/apply     { action_id, context }
 ---
 
 ## Лицензии
-- **Код**: MIT License (см. `LICENSE`).
+
+## License & Ethics
+
+This repository follows a dual-license scheme:
+
+- **Code:** AGPL-3.0  
+- **Content / Symbols / Media:** CC BY-NC-SA 4.0  
+- **Ethical charter:** see [LICENSE-ETHICS.md](./LICENSE-ETHICS.md)
+
+Use of FDL/NOVEYA symbols is allowed **only** in open, benevolent contexts; closed or exploitative usage is prohibited.
+
 - **Методология**: права за NOVEYA (см. `METHODOLOGY_LICENSE.txt`).
 
 ---
